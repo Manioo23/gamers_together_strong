@@ -1,0 +1,53 @@
+RoadMap 3.0:
+    Phase 1.2:
+        ✔ Get JSON server working @done(20-06-27 18:17)
+            ✔ Download the packets @done(20-06-27 18:17)
+            ✔ Create command for starting the server @done(20-06-27 18:17)
+        ✔ Create some user data inside the server @done(20-06-27 18:17)
+    Phase 2.2:
+        ✔ Make connection between JSON server and GraphQL @done(20-06-27 18:17)
+            ✔ Download axios and get it working @done(20-06-27 18:17)
+            ✔ Create basic requests with Promise returning @done(20-06-27 18:17)
+RoadMap:
+    Database implementation:
+        Phase 2.1:
+            Opinions:
+                ✔ Description field inside model for mongoose @done(20-06-26 14:39)
+                ✔ visible field inside model for mongoose @done(20-06-26 14:40)
+            Games: 
+                ✔ name field inside model for mongoose @done(20-06-26 14:46)
+                ☐ description field for a game
+                ☐ genre field for a game 
+            ☐ Delete UsersListMocks from RootQuery. [The RootQuery in schema file is for now using hardcoded values of users. Resolve function has to be upgraded.]
+    
+        DBService:
+            ☐ IS IT REALY IMPORTANT [the same thing can be done inside the graphql methods]
+            User:
+                ✔ Install mongoDB and mongoose [Read docs first how to do it and what to install with Express server] @done(20-06-25 15:53)
+                ✔ Create Users table [user: {id, username, discordName, description}] @done(20-06-25 15:53)
+                ☐ Create basic dbservice for CRUD operations on Users table [Methods have to handle errors and print msgs if any]
+                    ✔ Create user method @done(20-06-25 16:49)
+                    ✔ Delete user method @done(20-06-25 17:15)
+                    ☐ Update users description
+                    ☐ Update users discord
+                    ✔ Read user method @done(20-06-25 21:03)
+        
+        Phase 2.0:    
+            Games:
+                ☐ Games collection
+                    ☐ Create game
+                    ☐ Delete game
+                    ☐ Read game
+            ☐ Opinions collection
+                ☐ Create Opinion
+                ☐ Delete Opinion []
+                ☐ Toggle visibillity for one opinion [In case of only one opinion being disabled]
+                ☐ Toggle visibillity for user and game [In case of user deleting game from library]
+        Phase 3.0:
+            ☐ Add passhash to all users
+            ☐ Add passhash to models in mongoose
+    Password:
+        Passhash:
+            ☐ Add passhash to schema in graphql
+        Hashing:
+            ☐ Good hashing library and auth verification
