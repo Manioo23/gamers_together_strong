@@ -4,15 +4,22 @@ const axios = require('axios');
 const {
     GraphQLObjectType,
     GraphQLString,
-    GraphQLSchema
+    GraphQLSchema,
+    GraphQLList
 } = graphql;
 
 const GenreType = new GraphQLObjectType({
     name: "Genre",
-    fields: {
+    fields: () => ({
         id: { type: GraphQLString },
-        name: { type: GraphQLString }
-    }
+        name: { type: GraphQLString },
+        games: { 
+            type: new GraphQLList(GameType),
+            resolve(parentValue, args) {
+                return axios.get(`http://localhost:3000/genres/${parentValue.id}/games`).then(res => res.data)
+            }
+        }
+    })
 });
 
 const GameType = new GraphQLObjectType({
@@ -37,7 +44,15 @@ const UserType = new GraphQLObjectType({
         id: { type: GraphQLString },
         username: { type: GraphQLString },
         description: { type: GraphQLString },
-        discordName: { type: GraphQLString }
+        discordName: { type: GraphQLString },
+        games: {
+            type: new GraphQLList(GameType),
+            resolve(parentValue, args) {
+                return axios.get(`http://localhost:3000/users/${parentValue.id}/playes`)
+                    .then(res => res.data)
+                    .then(arr => arr.map(play => axios.get(`http://localhost:3000/games/${play.gameId}`).then(res => res.data)))
+            }
+        }
     }
 });
 
