@@ -16,12 +16,12 @@ RoadMap:
                 ✔ visible field inside model for mongoose @done(20-06-26 14:40)
             Games: 
                 ✔ name field inside model for mongoose @done(20-06-26 14:46)
-                ☐ description field for a game
-                ☐ genre field for a game 
-            ☐ Delete UsersListMocks from RootQuery. [The RootQuery in schema file is for now using hardcoded values of users. Resolve function has to be upgraded.]
+                ✔ description field for a game @done(20-06-28 14:25)
+                ✔ genre field for a game @done(20-06-28 14:25)
+            ✔ Delete UsersListMocks from RootQuery. [The RootQuery in schema file is for now using hardcoded values of users. Resolve function has to be upgraded.] @done(20-06-28 14:25)
     
         DBService:
-            ☐ IS IT REALY IMPORTANT [the same thing can be done inside the graphql methods]
+            ✔ IS IT REALY IMPORTANT [the same thing can be done inside the graphql methods] @done(20-06-28 14:25)
             User:
                 ✔ Install mongoDB and mongoose [Read docs first how to do it and what to install with Express server] @done(20-06-25 15:53)
                 ✔ Create Users table [user: {id, username, discordName, description}] @done(20-06-25 15:53)

@@ -1,0 +1,154 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "jack1",
+      "description": "My name is jack. I'm a big fan of all RTS games but I don't mind some FPS sometimes",
+      "discordName": "Jack1#3321"
+    },
+    {
+      "id": "2",
+      "username": "rosaline321",
+      "description": "My name is Anna. I stand the point that gamer-girls can play and they're good at it",
+      "discordName": "roseXrose#4421"
+    },
+    {
+      "id": "3",
+      "username": "stanxxx",
+      "description": "360 noscope! This joke is older then me and I'm not that young",
+      "discordName": "69stan69#1121"
+    }
+  ],
+  "games": [
+    {
+      "id": "1",
+      "name": "Minecraft: Dungeons",
+      "description": "Brave the dungeons alone, or team up with friends! Up to four players can battle together through action-packed, treasure-stuffed, wildly varied levels, all in an epic quest to save the villagers and take down the evil Arch-Illager!",
+      "genreId": "3"
+    },
+    {
+      "id": "2",
+      "name": "The last of us: Part II",
+      "description": "Set 5 years after the events of The Last of Us, we see the return of Joel and Ellie. Driven by hatred, Ellie sets out for Seattle to serve justice. However, she begins to wonder what justice really means.",
+      "genreId": "4"
+    },
+    {
+      "id": "3",
+      "name": "Valorant",
+      "description": "Imagine this: tactical shooter meets hypernatural powers. Everyone’s got guns and a unique set of abilities, so how do you beat someone with the speed of wind? Use your own moves to outplay them and beat them to the shot. VALORANT is a game for bold strategists who dare to make the unexpected play, because if it wins, it works.",
+      "genreId": "5"
+    },
+    {
+      "id": "4",
+      "name": "Cyberpunk 2077",
+      "description": "Adapted from the Cyberpunk franchise, the game is an open world, non-linear RPG with an FPS style in which players are able to heavily customize their character to suit their play style. Gun play, exploration, player choice and activities such as hacking are to feature heavily throughout the game with missions, quests and objectives being completed in a variety of different ways. The world will have dynamic weather and a day/night cycle to make it truly immersive.",
+      "genreId": "6"
+    },
+    {
+      "id": "5",
+      "name": "Half-Life 2",
+      "description": "By taking the suspense, challenge and visceral charge of the original, and adding startling new realism and responsiveness, Half-Life 2 opens the door to a world where the player's presence affects everything around him, from the physical environment to the behaviors even the emotions of both friends and enemies.",
+      "genreId": "5"
+    },
+    {
+      "id": "6",
+      "name": "Bloodborne",
+      "description": "With new story details, learn the tale of hunters who once made Yharnam their hunting grounds, meet new NPCs, and discover another side of the history and world of Bloodborne",
+      "genreId": "6"
+    },
+    {
+      "id": "7",
+      "name": "The Witcher 3",
+      "description": "A story-driven, next-generation open world role-playing game set in a visually stunning fantasy universe full of meaningful choices and impactful consequences. In The Witcher you play as the professional monster hunter, Geralt of Rivia, tasked with finding a child of prophecy in a vast open world rich with merchant cities, viking pirate islands, dangerous mountain passes, and forgotten caverns to explore.",
+      "genreId": "6"
+    },
+    {
+      "id": "8",
+      "name": "Club Penguin",
+      "description": "Club Penguin was a massively multiplayer online game, involving a virtual world that contained a range of online games and activities. It was created by New Horizon Interactive. Players used cartoon penguin-avatars and played in a winter-set virtual world.",
+      "genreId": "4"
+    },
+    {
+      "id": "9",
+      "name": "ITTA",
+      "description": "A girl, her cat, her gun, and a search for answers. Featuring challenging bullet-hell style gameplay and a thoughtful narrative steeped in otherworldly mythology, ITTA will test your skills and your resolve. At the end of the world, who else can you rely on but yourself?",
+      "genreId": "4"
+    },
+    {
+      "id": "12",
+      "name": "Green Hell",
+      "description": "Green Hell is a sweltering struggle for survival in the Amazonian rainforest. Clinging to life, the player is set on a journey of durability as the effects of solitude wear heavy not only on the body but also the mind. How long can you survive against the dangers of the unknown?",
+      "genreId": "2"
+    },
+    {
+      "id": "13",
+      "name": "Minecraft: Bedwars",
+      "description": "Minigame on minecraft servers. The main point is to be the last who survives. Anyone can respawn as long as they have a bed in their base.",
+      "genreId": "1"
+    },
+    {
+      "id": "14",
+      "name": "Call of Duty: Warzone",
+      "description": "This is a multiplayer mode for the new COD: Modern Warfare. The main goal is to stay alive the longest.",
+      "genreId": "1"
+    }
+  ],
+  "genres": [
+    {
+      "id": "1",
+      "name": "Battle Royale"
+    },
+    {
+      "id": "2",
+      "name": "Survival"
+    },
+    {
+      "id": "3",
+      "name": "Hack and Slash"
+    },
+    {
+      "id": "4",
+      "name": "Adventure"
+    },
+    {
+      "id": "5",
+      "name": "Shooter"
+    },
+    {
+      "id": "6",
+      "name": "Role-playing (RPG)"
+    }
+  ],
+  "playes": [
+    {
+      "userId": "1",
+      "gameId": "12",
+      "confirmed": false
+    },
+    {
+      "userId": "1",
+      "gameId": "14",
+      "confirmed": true
+    },
+    {
+      "userId": "2",
+      "gameId": "13",
+      "confirmed": true
+    },
+    {
+      "userId": "3",
+      "gameId": "12",
+      "confirmed": true
+    },
+    {
+      "userId": "3",
+      "gameId": "13",
+      "confirmed": false
+    },
+    {
+      "userId": "3",
+      "gameId": "14",
+      "confirmed": false
+    }
+  ]
+}
