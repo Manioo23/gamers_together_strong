@@ -7,7 +7,6 @@ import newGameQuery from '../../queries/newGame';
 import fetchGenresQuery from '../../queries/fetchGenres';
 
 const NewGame = (props) => {
-
     const [name, setName] = useState("");
     const [genreId, setGenreId] = useState("");
     const [description, setDescription] = useState("");
@@ -16,7 +15,6 @@ const NewGame = (props) => {
 
     const onSubmitHandler = (event) => {
         event.preventDefault()
-
         addGame({
             variables: {
                 name,

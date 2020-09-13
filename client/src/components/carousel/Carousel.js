@@ -7,11 +7,10 @@ import './Carousel.css';
 import FadeLoader from 'react-spinners/FadeLoader'
 
 const Carousel = withRouter((props) => {
-	console.log(props);
 	const generateImages = () => {
 		let games = props.data.games || [];
 		if (games.length) {
-			let res = games.map((v, i) => <div key={v.id} className={'Thumbnail'} onClick={() => props.history.push(`/games/:${v.id}`)}>[  {v.name}  ]</div>);
+			let res = games.map((v, i) => <div key={v.id} className={'Thumbnail'} onClick={() => props.history.push(`/games/${v.id}`)}>[  {v.name}  ]</div>);
 			res.push(<div key={"addgame"} className={'Thumbnail'} onClick={() => props.history.push(`/games/add`)}>[ + ]</div>);
 			return res;
 		}

@@ -5,7 +5,8 @@ const cors = require('cors')
 
 const app = express();
 app.use(cors())
-app.use('/graphql', (req, res, next) => setTimeout(next, 3000))
+//UGLY: This is here only for the debugging purpouse
+app.use('/graphql', (req, res, next) => setTimeout(next, 1000))
 app.use('/graphql', expressGraphQL({
     schema,
     graphiql: true
