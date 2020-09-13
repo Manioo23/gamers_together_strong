@@ -1,53 +1,46 @@
-RoadMap 3.0:
-    Phase 1.2:
+Phase 1:
+    JSON server:
         ✔ Get JSON server working @done(20-06-27 18:17)
-            ✔ Download the packets @done(20-06-27 18:17)
-            ✔ Create command for starting the server @done(20-06-27 18:17)
-        ✔ Create some user data inside the server @done(20-06-27 18:17)
-    Phase 2.2:
-        ✔ Make connection between JSON server and GraphQL @done(20-06-27 18:17)
-            ✔ Download axios and get it working @done(20-06-27 18:17)
-            ✔ Create basic requests with Promise returning @done(20-06-27 18:17)
-RoadMap:
-    Database implementation:
-        Phase 2.1:
-            Opinions:
-                ✔ Description field inside model for mongoose @done(20-06-26 14:39)
-                ✔ visible field inside model for mongoose @done(20-06-26 14:40)
-            Games: 
-                ✔ name field inside model for mongoose @done(20-06-26 14:46)
-                ✔ description field for a game @done(20-06-28 14:25)
-                ✔ genre field for a game @done(20-06-28 14:25)
-            ✔ Delete UsersListMocks from RootQuery. [The RootQuery in schema file is for now using hardcoded values of users. Resolve function has to be upgraded.] @done(20-06-28 14:25)
+        ✔ Populate data inside the server @done(20-06-27 18:17)
+        ✔ Test basic requests to the server [CRUD operation should work without any problems] @done(20-06-29 15:24)
+    GraphQL -> Axios -> JSON server:
+        ✔ Install axios and test basic requests to the JSON server @done(20-06-29 15:26)
+        ✔ Replace mock data inside resolve functions with axios requests @done(20-06-29 15:26)
+Phase 2:
+    RootQuery:
+        ✔ Users field [ Fetch all users ] @done(20-07-11 15:50)
+        ✘ Games field [ Fetch all games ] [ ? ] @cancelled(20-07-11 15:52) [ This is not needed for now ]
+        ✔ Opinions field [ Fetch list of opinions for user ] @done(20-07-11 19:13)
+        ✔ Opinion field [ Fetch opinon with specific id ] @done(20-07-11 19:13)
+    Mutations:
+        ✔ Set opinion.visible for user and game @done(20-07-13 12:26)
+        ✘ Set plays.confirmed for user and game @cancelled(20-07-13 12:59) [ This has to be done but not now ]
+        ✔ Add opinion @done(20-07-13 12:58)
+    Opinions:
+        ✔ Create opinions data inside JSON server @done(20-07-11 17:17)
+        ✔ Make a OpinionType inside GraphQL Schema @done(20-07-11 17:52)
+        ✔ Test mutations and queries for opinions @done(20-07-13 12:59)
+    Code refactor:
+        ✔ Schema folder [ Migrating all types into seperate files ] @done(20-07-11 20:19)
+        ✘ Basic files comments @cancelled(20-07-13 13:00)
+        ✔ Code review for all server-side files @done(20-07-13 13:03)
+Phase 3:
+    Frontend:
+        Pages:
+            ✔ Index page wireframe @done(20-08-31 17:13)
+            ☐ User page wireframe
+            ☐ Game page wireframe 
+        Components:
+            ✘ Chevrone component [ Arrow left or right with onClick callback ] @cancelled(20-08-31 17:13)
+            ✔ Carusel component [ With some array of imgs, has a state of what deviation ] @done(20-08-31 17:13)
+            ✘ Carusel element [ Img with onHover actions and stuff... ] @cancelled(20-08-31 17:13)
+            ✘ Logo @cancelled(20-08-31 17:13)
+            ✘ Button @cancelled(20-08-31 17:13)
+            ✘ Button filled @cancelled(20-08-31 17:13)
     
-        DBService:
-            ✔ IS IT REALY IMPORTANT [the same thing can be done inside the graphql methods] @done(20-06-28 14:25)
-            User:
-                ✔ Install mongoDB and mongoose [Read docs first how to do it and what to install with Express server] @done(20-06-25 15:53)
-                ✔ Create Users table [user: {id, username, discordName, description}] @done(20-06-25 15:53)
-                ☐ Create basic dbservice for CRUD operations on Users table [Methods have to handle errors and print msgs if any]
-                    ✔ Create user method @done(20-06-25 16:49)
-                    ✔ Delete user method @done(20-06-25 17:15)
-                    ☐ Update users description
-                    ☐ Update users discord
-                    ✔ Read user method @done(20-06-25 21:03)
-        
-        Phase 2.0:    
-            Games:
-                ☐ Games collection
-                    ☐ Create game
-                    ☐ Delete game
-                    ☐ Read game
-            ☐ Opinions collection
-                ☐ Create Opinion
-                ☐ Delete Opinion []
-                ☐ Toggle visibillity for one opinion [In case of only one opinion being disabled]
-                ☐ Toggle visibillity for user and game [In case of user deleting game from library]
-        Phase 3.0:
-            ☐ Add passhash to all users
-            ☐ Add passhash to models in mongoose
-    Password:
-        Passhash:
-            ☐ Add passhash to schema in graphql
-        Hashing:
-            ☐ Good hashing library and auth verification
+To be done:
+    ☐ Migration from JSON server to MongoDB
+    ☐ Implementing edge cases for CRUD operations [ Cases like "when game is deleted, all opinions should be hidden from the profile" ]
+    ☐ Authentication for the users [ Login, Register, Password Hashing, Pasword reseting ]
+    ☐ Email service [ Sending reset password email, Sending welcome email, etc. ]
+    ☐ Unit testing

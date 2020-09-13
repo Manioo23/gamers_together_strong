@@ -1,0 +1,79 @@
+@import "../../node_modules/compass-mixins/lib/compass/css3";
+
+body {
+	margin: 0px;
+  	padding: 0px;
+  	font-family: sans-serif;
+  	text-align: center;
+  	display: flex;
+  	justify-content: center;
+	  align-items: center;
+	  background-color: black;
+}
+img {
+  	height: 100px;
+}
+
+.Box {
+	border: 0.05em solid #01F802;
+	height: 1em;
+	width: 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1em;
+}
+
+.Box:hover {
+	cursor: pointer;
+	color:#0bdc0b;
+}
+
+.Wrong {
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	color: #01F802;
+	font-size: 100px;
+	text-shadow: 0px 0px 100px #01F802;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.Wrong>*{
+	cursor: default;
+	user-select: none;
+
+	animation-name: text_flicker;
+	animation-duration: 500ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes text_flicker {
+	0% {
+		color: #01F802;
+		text-shadow: 0px 0px 100px #01f801;
+	}
+	20% {
+		color: #06e606;
+		text-shadow: 0px 0px 92px #01f801;
+	}
+	40% {
+		color: #19f519;
+		text-shadow: 0px 0px 80px #01f801;
+	}
+	60% {
+		color: #13e613;
+		text-shadow: 0px 0px 90px #01f801;
+	}
+	90% {
+		color: #0bfa0b;
+		text-shadow: 0px 0px 110px #01f801;
+	}
+	100% {
+		color: #13e213;
+		text-shadow: 0px 0px 105px #01f801;
+	}
+  }

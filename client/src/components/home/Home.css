@@ -1,0 +1,13 @@
+.Home {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #28293D;
+    color: #FFFFFF;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    font-family: 'VT323', monospace;
+}

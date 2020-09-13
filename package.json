@@ -1,0 +1,20 @@
+{
+  "name": "gamer-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently -n CLIENT,SERVER,JSON \"cd client && npm start\" \"cd server && npm run dev\" \"cd server && npm run server:json\""
+  },
+  "author": {
+    "name": "Maciej Witkowski",
+    "email": "maciekwitkowski322@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "compass": "^0.1.1",
+    "concurrently": "^5.3.0",
+    "node-sass": "^4.14.1"
+  }
+}

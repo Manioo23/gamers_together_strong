@@ -1,0 +1,15 @@
+.Navbar {
+    padding: 10px;
+    display: flex;
+}
+.Navmenu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-self: flex-end;
+}
+.Logo {
+    height: 60px;
+    font-size: 38px;
+}
