@@ -103,6 +103,12 @@
       "name": "Call of Duty: Warzone",
       "description": "This is a multiplayer mode for the new COD: Modern Warfare. The main goal is to stay alive the longest.",
       "genreId": "1"
+    },
+    {
+      "name": "Nazwa ",
+      "description": "Opis jakikolwiek chj",
+      "genreId": "2",
+      "id": "RQzW3p8"
     }
   ],
   "genres": [
