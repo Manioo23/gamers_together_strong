@@ -39,7 +39,9 @@ Phase 3:
             ✘ Button filled @cancelled(20-08-31 17:13)
 
 To be fixed:
-    ☐ In database there is tabel called "playes" and it's kinda not correct. It should be "plays"
+    ✔ In database there is tabel called "playes" and it's kinda not correct. It should be "plays" @done(20-09-16 14:03)
+    ☐ GamePage has to be renamed to GameScreen
+    ☐ GameScreen need to have a button to go back to HomeScreen
 To be done:
     ☐ Migration from JSON server to MongoDB
     ☐ Implementing edge cases for CRUD operations [ Cases like "when game is deleted, all opinions should be hidden from the profile" ]

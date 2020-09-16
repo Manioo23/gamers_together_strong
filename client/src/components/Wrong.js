@@ -1,15 +1,14 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-//FIXME: Tu nie musi być routera
-const Wrong = withRouter((props) => {
-	return(
-		<div className='Wrong'>
-			<p style={{margin: '0px'}}>Error has occured!<br/>Please restart the system</p>
-			<div className="Box" onClick={() => props.history.push('/home')}>X</div>
-		</div>
-			
-	);
-});
+const Wrong = (props) => (
+	<div className='Wrong'>
+		<p style={{ margin: '0px' }}>Error has occured!<br />Please restart the system</p>
+		<Link to={'/home'}>
+			<div className="Box">X</div>
+		</Link>
+	</div>
+);
+
 
 export default Wrong; 
