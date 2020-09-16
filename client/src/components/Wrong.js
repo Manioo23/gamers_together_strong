@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
+//FIXME: Tu nie musi być routera
 const Wrong = withRouter((props) => {
 	return(
 		<div className='Wrong'>
@@ -11,4 +12,4 @@ const Wrong = withRouter((props) => {
 	);
 });
 
-export default Wrong;
+export default Wrong; 

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Navbar from '../navbar/Navbar';
-import './Home.css';
+import './HomeScreen.css';
 import Carousel from '../carousel/Carousel';
 
 class HomeScreen extends Component {

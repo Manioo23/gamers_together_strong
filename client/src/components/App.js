@@ -6,7 +6,6 @@ import { ApolloProvider } from 'react-apollo';
 import { InMemoryCache } from 'apollo-cache-inmemory';
 import { HttpLink } from 'apollo-link-http';
 
-import Main from './Main';
 import Routes from './Routes';
 
 import { store, history } from '../store';
@@ -31,11 +30,9 @@ class App extends Component {
 		return (
 			<Provider store={ store }>
 				<ApolloProvider client={client}>
-					<Main>
-						<ConnectedRouter history={ history }>
-							{ Routes }
-						</ConnectedRouter>
-					</Main>
+					<ConnectedRouter history={ history }>
+						{ Routes }
+					</ConnectedRouter>
 				</ApolloProvider>
 			</Provider>
 		);

@@ -3,6 +3,8 @@ import { useQuery } from 'react-apollo';
 import fetchGame from '../../queries/fetchGame';
 import FadeLoader from 'react-spinners/FadeLoader'
 
+// Podstrona dla pojedynczej gry
+
 const prepareGameInfo = ({ game }) => {
     return (
         <div>
@@ -23,7 +25,9 @@ const prepareGameInfo = ({ game }) => {
 }
 
 const GamePage = (props) => {
+    // GameId przychodzi jako argument w url'u
     const GameId = props.match.params.id;
+    // Zapytanie do GraphQL o dane dotyczące gry o ID = GameId
     const {loading, error, data} = useQuery(fetchGame, { variables: { id: GameId }});
     return (
         <div>

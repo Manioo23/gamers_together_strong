@@ -6,9 +6,12 @@ import FadeLoader from 'react-spinners/FadeLoader';
 import newGameQuery from '../../queries/newGame';
 import fetchGenresQuery from '../../queries/fetchGenres';
 
+// Formularz dodawania nowej gry do bazy danych
+// W sumie nie potrzebny z poziomu użytkownika ale może kiedyś się przyda 
+
 const NewGame = (props) => {
     const [name, setName] = useState("");
-    const [genreId, setGenreId] = useState("");
+    const [genreId, setGenreId] = useState(""); 
     const [description, setDescription] = useState("");
     const [addGame, ] = useMutation(newGameQuery);
     const {loading, error, data} = useQuery(fetchGenresQuery);

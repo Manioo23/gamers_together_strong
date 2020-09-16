@@ -16,7 +16,7 @@ const UserType = new GraphQLObjectType({
         games: {
             type: new GraphQLList(GameType),
             resolve(parentValue, args) {
-                return axios.get(`http://localhost:3004/users/${parentValue.id}/playes`)
+                return axios.get(`http://localhost:3004/users/${parentValue.id}/plays`)
                 .then(res => res.data)
                 .then(arr => arr.map(play => axios.get(`http://localhost:3004/games/${play.gameId}`).then(res => res.data)))
             }

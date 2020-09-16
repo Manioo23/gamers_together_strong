@@ -15,7 +15,7 @@ class BasicContainer extends Component {
 			break;
 			case 'REMOVE' :
 				this.props.removeHello();
-			break;
+			break; 
 			default:
 				console.log('Ups..');
 			break;

@@ -6,7 +6,12 @@ import query from '../../queries/fetchGames'
 import './Carousel.css';
 import FadeLoader from 'react-spinners/FadeLoader'
 
+// Komponent obsługujący karuzele na home screenie
+//FIXME: Router nie jest tu potrzebny
 const Carousel = withRouter((props) => {
+
+	//UGLY: Miło by było ogarnąć kafelki karuzeli jako osobny komponent
+	//FIXME: Metoda w metodzie that's a big no no
 	const generateImages = () => {
 		let games = props.data.games || [];
 		if (games.length) {
@@ -27,4 +32,5 @@ const Carousel = withRouter((props) => {
 	);
 }); 
 
+//UGLY: zamienić to na hooka
 export default graphql(query)(Carousel);
