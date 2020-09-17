@@ -24,7 +24,7 @@ const prepareGameInfo = ({ game }) => {
     )
 }
 
-const GamePage = (props) => {
+const GameScreen = (props) => {
     // GameId przychodzi jako argument w url'u
     const GameId = props.match.params.id;
     // Zapytanie do GraphQL o dane dotyczące gry o ID = GameId
@@ -43,4 +43,4 @@ const GamePage = (props) => {
     )
 }
 
-export default GamePage;
+export default GameScreen;
