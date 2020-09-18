@@ -1,4 +1,4 @@
-.Button {
+.button {
     height: 50px;
     width: 150px;
     border-radius: 40px;
@@ -12,8 +12,8 @@
     cursor: pointer;
 
     transition: all 200ms ease-in-out;
-}
 
-.Button:hover { 
-    border-radius: 20px;
+    &:hover {
+        border-radius: 20px;
+    }
 }

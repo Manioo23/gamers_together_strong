@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { Provider } from 'react-redux';
-import { ConnectedRouter } from 'react-router-redux';
 import ApolloClient from 'apollo-client';
+import React, { Component } from 'react';
 import { ApolloProvider } from 'react-apollo';
-import { InMemoryCache } from 'apollo-cache-inmemory';
+import { ConnectedRouter } from 'react-router-redux';
 import { HttpLink } from 'apollo-link-http';
+import { InMemoryCache } from 'apollo-cache-inmemory';
+import { Provider } from 'react-redux';
 
 import Routes from './Routes';
 

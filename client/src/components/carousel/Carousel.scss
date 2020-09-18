@@ -1,10 +1,11 @@
-.Carousel {
+.carousel {
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(160px * 2)
 }
-.Thumbnail {
+
+.carousel-tile {
     height: 160px;
     width: 90px;
     border: 5px solid ;
@@ -12,17 +13,18 @@
     justify-content: center;
     align-items: center;
     transition: all 200ms ease-out;
+    
+    &:hover {
+        height: calc(160px * 2);
+        width: calc(90px * 2);
+        cursor: pointer;
+        background: #FF3B3B;
+        color: black;
+    }
 }
 
-.Thumbnail:hover {
-    height: calc(160px * 2);
-    width: calc(90px * 2);
-    cursor: pointer;
-    background: #FF3B3B;
-    color: black;
-}
 
-.Images {
+.tiles-container {
     display: flex;
     justify-content: space-between;
     align-items: center;

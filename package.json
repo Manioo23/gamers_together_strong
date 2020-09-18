@@ -13,8 +13,12 @@
   },
   "license": "ISC",
   "dependencies": {
+    "@blueprintjs/core": "^3.31.0",
     "compass": "^0.1.1",
     "concurrently": "^5.3.0",
     "node-sass": "^4.14.1"
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.5"
   }
 }
