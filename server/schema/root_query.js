@@ -19,8 +19,9 @@ const RootQuery = new GraphQLObjectType({
         },
         users: {
             type: new GraphQLList( UserType ),
+            args: { first: { type: GraphQLInt}, offset: { type: GraphQLInt } },
             resolve(parentValue, args) {
-                return axios.get(`http://localhost:3004/users/`).then(res => res.data);
+                return axios.get(`http://localhost:3004/users/${args.first ? `?_limit=${args.first}` : ''}`).then(res => res.data);
             }
         },
         game: {

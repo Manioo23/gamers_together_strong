@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import * as React from 'react';
 import { useQuery, useMutation } from 'react-apollo';
 import {history} from '../../store'
 
@@ -9,14 +9,14 @@ import fetchGenresQuery from '../../queries/fetchGenres';
 // Formularz dodawania nowej gry do bazy danych
 // W sumie nie potrzebny z poziomu użytkownika ale może kiedyś się przyda 
 
-const NewGame = (props) => {
-    const [name, setName] = useState("");
-    const [genreId, setGenreId] = useState(""); 
-    const [description, setDescription] = useState("");
+const NewGame: React.FC = () => {
+    const [name, setName] = React.useState("");
+    const [genreId, setGenreId] = React.useState(""); 
+    const [description, setDescription] = React.useState("");
     const [addGame, ] = useMutation(newGameQuery);
     const {loading, error, data} = useQuery(fetchGenresQuery);
 
-    const onSubmitHandler = (event) => {
+    const onSubmitHandler = (event: React.FormEvent) => {
         event.preventDefault()
         addGame({
             variables: {
@@ -24,14 +24,14 @@ const NewGame = (props) => {
                 description,
                 genreId
             }
-        }).then(
-            history.push('/home')
-        ).catch(e => console.log(e))
+        })
+        .then(() => history.push('/home'))
+        .catch(e => console.log(e))
     } 
 
 
     if(loading) 
-        return <FadeLoader css={{margin: '0px auto'}} color={"#fff"}/>;
+        return <FadeLoader css={'margin: 0px auto'} color={"#fff"}/>;
     else if (error) 
         return <p>{error}</p>
     else 
@@ -56,11 +56,12 @@ const NewGame = (props) => {
                     value={genreId}
                 >
                     
-                    { data.genres.map((v, i) => <option value={v.id} key={i}>[ {v.name} ]</option>) }
+                    { data.genres.map((v: {name: string, id: string}) => <option value={v.id} key={v.id}>[ {v.name} ]</option>) }
                 </select>
                 <input type='submit' value='Submit' />
             </form>
         );
 }
 
+NewGame.displayName = 'NewGame';
 export default NewGame;

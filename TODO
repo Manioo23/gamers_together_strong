@@ -37,6 +37,8 @@ Phase 3:
             ✘ Logo @cancelled(20-08-31 17:13)
             ✘ Button @cancelled(20-08-31 17:13)
             ✘ Button filled @cancelled(20-08-31 17:13)
+            ☐ NewUserScreen for adding new users to the database
+            ☐ Login Page
             Toaster:
                 ☐ Should be a singleton created in app component
                 ☐ Should have a possibility to have a toast attached
