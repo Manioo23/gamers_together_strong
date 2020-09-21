@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 
 import Routes from './Routes';
 
-import { store, history } from '../store';
+import { store, history } from '../store/store';
 
 import '../styles/index.scss';
 

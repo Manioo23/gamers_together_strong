@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useQuery, useMutation } from 'react-apollo';
-import {history} from '../../store'
+import {history} from '../../store/store'
 
 import FadeLoader from 'react-spinners/FadeLoader';
 import newGameQuery from '../../queries/newGame';
