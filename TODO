@@ -1,60 +1,34 @@
-Phase 1:
-    JSON server:
-        ✔ Get JSON server working @done(20-06-27 18:17)
-        ✔ Populate data inside the server @done(20-06-27 18:17)
-        ✔ Test basic requests to the server [CRUD operation should work without any problems] @done(20-06-29 15:24)
-    GraphQL -> Axios -> JSON server:
-        ✔ Install axios and test basic requests to the JSON server @done(20-06-29 15:26)
-        ✔ Replace mock data inside resolve functions with axios requests @done(20-06-29 15:26)
-Phase 2:
-    RootQuery:
-        ✔ Users field [ Fetch all users ] @done(20-07-11 15:50)
-        ✘ Games field [ Fetch all games ] [ ? ] @cancelled(20-07-11 15:52) [ This is not needed for now ]
-        ✔ Opinions field [ Fetch list of opinions for user ] @done(20-07-11 19:13)
-        ✔ Opinion field [ Fetch opinon with specific id ] @done(20-07-11 19:13)
-    Mutations:
-        ✔ Set opinion.visible for user and game @done(20-07-13 12:26)
-        ✘ Set plays.confirmed for user and game @cancelled(20-07-13 12:59) [ This has to be done but not now ]
-        ✔ Add opinion @done(20-07-13 12:58)
-    Opinions:
-        ✔ Create opinions data inside JSON server @done(20-07-11 17:17)
-        ✔ Make a OpinionType inside GraphQL Schema @done(20-07-11 17:52)
-        ✔ Test mutations and queries for opinions @done(20-07-13 12:59)
-    Code refactor:
-        ✔ Schema folder [ Migrating all types into seperate files ] @done(20-07-11 20:19)
-        ✘ Basic files comments @cancelled(20-07-13 13:00)
-        ✔ Code review for all server-side files @done(20-07-13 13:03)
-Phase 3:
-    Frontend:
-        Pages:
-            ✔ Index page wireframe @done(20-08-31 17:13)
-            ☐ User page wireframe
-            ☐ Game page wireframe 
-        Components:
-            ✘ Chevrone component [ Arrow left or right with onClick callback ] @cancelled(20-08-31 17:13)
-            ✔ Carusel component [ With some array of imgs, has a state of what deviation ] @done(20-08-31 17:13)
-            ✘ Carusel element [ Img with onHover actions and stuff... ] @cancelled(20-08-31 17:13)
-            ✘ Logo @cancelled(20-08-31 17:13)
-            ✘ Button @cancelled(20-08-31 17:13)
-            ✘ Button filled @cancelled(20-08-31 17:13)
-            ☐ Login Page
-            Toaster:
-                ☐ Should be a singleton created in app component
-                ☐ Should have a possibility to have a toast attached
-                ☐ Toasts should dissapear automaticly
-                ☐ Toasts should appear over everything
-                // All of this could be done with blueprint library
-                
-
-To be fixed:
-    ✔ In database there is tabel called "playes" and it's kinda not correct. It should be "plays" @done(20-09-16 14:03)
-    ✔ GamePage has to be renamed to GameScreen @done(20-09-17 21:59)
-    ☐ GameScreen need to have a button to go back to HomeScreen same with UserScreen
-    ☐ All styles should be in scss
-    ☐ Stylesheets should use unified variables and basic styles for the whole app 
-To be done:
-    ☐ Migration from JSON server to MongoDB
-    ☐ Implementing edge cases for CRUD operations [ Cases like "when game is deleted, all opinions should be hidden from the profile" ]
-    ☐ Authentication for the users [ Login, Register, Password Hashing, Pasword reseting ]
-    ☐ Email service [ Sending reset password email, Sending welcome email, etc. ]
-    ☐ Unit testing
+Tasks:
+    AuthScreen:
+        // Stworzyć strone do autoryzacji posiadającą formularze logowania i rejestracji
+        ☐ Formularz logowania [ Inputy 'email', 'hasło'; Checkbox 'Pozostań zalogowanym'; Button 'submit' ]
+        ☐ Formularz rejestracji [ Inputy 'email', 'hasło', 'powtórz hasło'; Checkbox 'wyrażam zgode'; Button 'submit' ]
+        ☐ Przycisk SignIn / SignUp zmieniający formularz logowania na formularz rejestracji i w drugą stronę
+        ☐ Przycisk powrotu na stronę główną
+    Toaster:
+        // Komponent wyświetlający się ponad całą stroną, będący singletonem dla całej aplikacji,
+        ☐ Stworzenie komponentu będącego singletonem o stanie globalnym i wyświetlającego się na stronie niezależnie
+        ☐ Możliwość edycji tego stanu przez dowolny komponent [ Możliwe że przy użyciu reduxa ]
+            ☐ Dodawanie nowych Toastów do Toastera
+            ☐ Automatyczne segregowanie nowych Toastów w Toasterze
+            ☐ Toasty posiadają swój czas // np. 3 różne czasy wyświetlania 'short', 'medium', 'long'
+            ☐ Usuwanie przestarzałych Toastów w Toasterze
+            ☐ Ustawianie typów Toastów // np. Error, Message, Warning
+    Miscellaneous:
+        ☐ GameScreen powinien posiadać przycisk powrotu do strony głównej, to samo powinien mieć UserScreen
+        ☐ Wszystkie pliki stylów powinny być w rozszerzeniu .scss
+        ☐ Pliki stylów powinny mieć jedno źródło kolorów, zmiennych i podstawowych class [ np. color-primary: #fff, font-size-big: 15px, .justified-center ]
+    To be specified:
+        // Te taski nie są jeszcze sprecyzowane, przed wykonaniem należy je rozpisać i wyprecyzować ich zadanie
+        ☐ Migracja z bazy danych w JSON na MongoDB
+        ☐ Proces authentykacji użytkowników
+            ☐ Logowanie
+            ☐ Rejestracja
+            ☐ Sesja i tokeny uwierzytelniające
+            ☐ Hashowanie haseł w bazie danych
+            ☐ Resetowanie hasła
+        ☐ Sprecyzować przypadki krańcowe dla operacji w bazie danych // np. kiedy gra jest usuwana z bazy, wszystkie opinie dotyczące tej gry też powinny być usunięte
+        ☐ Servis mailingowy
+            ☐ Wysyłanie maila do resetu hasła
+            ☐ Wysyłanie maila powitalnego
+        ☐ Testy jednostkowe na frontend i backend
