@@ -22,7 +22,8 @@ const link = new HttpLink({
 
 const client = new ApolloClient({
 	cache, 
-	link
+	link,
+	dataIdFromObject: o => o.id,
 });
 
 class App extends Component {
