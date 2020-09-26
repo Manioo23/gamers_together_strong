@@ -3,7 +3,7 @@ import { useQuery } from 'react-apollo';
 import { DotLoader } from 'react-spinners';
 
 import Navbar from '../navbar/Navbar';
-import './HomeScreen.scss';
+import * as style from './HomeScreen.scss';
 import Carousel from '../carousel/Carousel';
 import fetchGames from '../../queries/fetchGames';
 import fetchUsers from '../../queries/fetchUsers';
@@ -22,7 +22,7 @@ const HomeScreen: React.FC<HomeScreenProps> = (_) => {
 		return <p>Error</p>
 	else 
 		return (
-			<div className='Home'>
+			<div className={style.home}>
 				<Navbar />
 				<div className='Games-Carousel'>
 					<Carousel urlBase={'/games'} data={dataGames.games.map( (v: {name: string, id: string}) => ( {value: v.name, id: v.id} )) }/>

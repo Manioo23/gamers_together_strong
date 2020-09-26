@@ -1,15 +1,39 @@
-.Navbar {
-    padding: 10px;
-    display: flex;
+@import '../../styles/default';
+@import '../../styles/colors';
+@import '../../styles/variables';
+
+.navbarWrapper {
+    @extend .container-fluid;
+    @extend .flex-column-center;
 }
-.Navmenu {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    align-self: flex-end;
+
+.navbar {
+    @extend .text-align-center;
+    @extend .flex-row-center;
+
+    height: 20px;
+    color: $color-success;
 }
-.Logo {
+
+.navbarElement {
+    @extend .cursor-pointer;
+
+    font-size: $font-size-medium;
+    width: 80px;
+}
+
+.navbarUserInfo {
+    @extend .container-fluid;
+    @extend .flex-row-center;
+
     height: 60px;
-    font-size: 38px;
+    color: $color-dark;
+    font-size: $font-size-extra-large;
+    background-color: $color-light;
+}
+
+.navbarUserInfoElement {
+    @extend .text-align-center;
+
+    width: 120px;
 }

@@ -4,7 +4,7 @@
 
 $font-size-wrong-screen: 100px;
 
-.wrong-screen {
+.wrongScreen {
     @extend .flex-column-center;
     @extend .text-align-center;
 
@@ -14,4 +14,24 @@ $font-size-wrong-screen: 100px;
     color: $color-success;
 	font-size: $font-size-wrong-screen;
     text-shadow: 0px 0px $font-size-wrong-screen $color-success;
+    
+    * {
+        @extend .cursor-default;
+    }
 }
+
+
+.box {
+	border: 0.05em solid #01F802;
+	height: 1em;
+	width: 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1em;
+    &:hover {
+        cursor: pointer;
+        color:#0bdc0b;
+    }
+}
+

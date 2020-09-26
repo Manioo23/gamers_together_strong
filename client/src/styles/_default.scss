@@ -84,6 +84,12 @@
     flex-direction: row;
 }
 
+.flex-space-between {
+    @extend .flex-row-center;
+    
+    justify-content: space-between;
+}
+
 //UTILS
 .background-image-cover {
     background-size: cover;
@@ -96,6 +102,10 @@
 
 .cursor-default {
     cursor: default;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
 
 .position-relative {

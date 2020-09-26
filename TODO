@@ -18,6 +18,7 @@ Tasks:
         ☐ GameScreen powinien posiadać przycisk powrotu do strony głównej, to samo powinien mieć UserScreen
         ☐ Wszystkie pliki stylów powinny być w rozszerzeniu .scss
         ☐ Pliki stylów powinny mieć jedno źródło kolorów, zmiennych i podstawowych class [ np. color-primary: #fff, font-size-big: 15px, .justified-center ]
+        ☐ Wszystkie klasy w modułach scss powiny używać camelcasa [ umożliwia to korzystanie z notacji style.className zamiast style['class-name'] ]
         ☐ Każda gra powinna posiadać w bazie danych url do zdjęcia
     To be specified:
         // Te taski nie są jeszcze sprecyzowane, przed wykonaniem należy je rozpisać i wyprecyzować ich zadanie
