@@ -1,18 +1,19 @@
 @import "~normalize.css";
+@import "./variables";
+@import "./colors";
+@import "./default";
 
 body {
 	margin: 0px;
   	padding: 0px;
-  	font-family: sans-serif;
-  	text-align: center;
+	font-family: sans-serif;
+	
   	display: flex;
   	justify-content: center;
 	align-items: center;
-	background-color: black;
-	color: white;
-}
-img {
-  	height: 100px;
+
+	background-color: $color-dark;
+	color: $color-primary;
 }
 
 a {
@@ -36,16 +37,7 @@ a {
 }
 
 .Wrong {
-	width: 100vw;
-	height: 100vh;
-	background: black;
-	color: #01F802;
-	font-size: 100px;
-	text-shadow: 0px 0px 100px #01F802;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	
 }
 .Wrong>*{
 	cursor: default;

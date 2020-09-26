@@ -1,0 +1,107 @@
+@import './variables';
+
+.margin-horizontal-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.margin-horizontal-zero {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.margin-vertical-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.margin-vertical-zero {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.margin-auto {
+    @extend .margin-horizontal-auto,
+    .margin-vertical-auto;
+}
+
+.margin-zero {
+    @extend .margin-horizontal-zero,
+    .margin-vertical-zero;
+}
+
+// PADDING 
+.padding-horizontal-zero {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.padding-vertical-zero {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.padding-zero {
+    @extend .padding-horizontal-zero;
+    @extend .padding-vertical-zero;
+}
+
+// HEIGHT and WIDTH
+.container-fluid {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    height: 100%;
+    width: 100%;
+}
+
+//DISPLAY
+.display-flex {
+    display: flex;
+}
+
+.flex-center {
+    @extend .display-flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-center {
+    @extend .display-flex;
+    @extend .flex-center;
+
+    flex-direction: column;
+}
+
+.flex-row-center {
+    @extend .display-flex;
+    @extend .flex-center;
+
+    flex-direction: row;
+}
+
+//UTILS
+.background-image-cover {
+    background-size: cover;
+    background-position: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.cursor-default {
+    cursor: default;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}

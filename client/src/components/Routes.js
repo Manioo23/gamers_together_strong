@@ -1,11 +1,11 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import Wrong from './Wrong';
-import HomeScreen from './homeScreen/HomeScreen';
 import NewGame from './newgame/NewGame';
 import GamePage from './gameScreen/GameScreen';
+import HomeScreen from './homeScreen/HomeScreen';
 import UserScreen from './userScreen/UserScreen';
+import WrongScreen from './wrongScreen/WrongScreen';
 
 const Routes = (
 	<Switch>
@@ -13,7 +13,7 @@ const Routes = (
 		<Route path='/games/add' component={ NewGame }/>
 		<Route path='/games/:id' component={ GamePage }/>
 		<Route path='/users/:id' component={ UserScreen }/>
-		<Route path='/' component={ Wrong }/>
+		<Route path='/' component={ WrongScreen }/>
 	</Switch>
 );
 
