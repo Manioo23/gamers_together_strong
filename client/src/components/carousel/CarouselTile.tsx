@@ -1,5 +1,8 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+
+import * as style from './Carousel.scss';
+
 type CarouselTileProps = {
     value: string,
     key?: string,
@@ -8,17 +11,26 @@ type CarouselTileProps = {
 }
 
 const CarouselTile: React.FC<CarouselTileProps> = ({value, linkTo, className}) => {
-    let finalClassName = `carousel-tile ${className || null}`;
     if( linkTo ) {
         return (
-            <Link to={linkTo} className={finalClassName}>
-                {value}
+            <Link to={linkTo} className={style.carouselTile}>
+                <div className={style.top}>
+                    {value}
+                </div>
+                <div className={style.bottom}>
+                    <div className={style.bottomImg} style={{backgroundImage: "url('https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg')"}}/>
+                </div>
             </Link>
         );
     } else 
         return (
-            <div className={`carousel-tile ${className || null}`}>
-                {value}
+            <div className={style.carouselTile}>
+                <div className={style.top}>
+                    {value}
+                </div>
+                <div className={style.bottom}>
+                    <div className={style.bottomImg} style={{backgroundImage: "url('https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg')"}}/>
+                </div>
             </div>
         )
 }

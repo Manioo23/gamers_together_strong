@@ -24,10 +24,10 @@ const HomeScreen: React.FC<HomeScreenProps> = (_) => {
 		return (
 			<div className={style.home}>
 				<Navbar />
-				<div className='Games-Carousel'>
+				<div className={style.homeCarousel}>
 					<Carousel urlBase={'/games'} data={dataGames.games.map( (v: {name: string, id: string}) => ( {value: v.name, id: v.id} )) }/>
 				</div>
-				<div className='Users-Carousel'>
+				<div className={style.homeCarousel}>
 					<Carousel urlBase={'/users'} data={dataUsers.users.map( (v: {username: string, id: string}) => ( {value: v.username, id: v.id}) )} />
 				</div>
 				<div className='Stopka'>

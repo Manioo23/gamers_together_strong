@@ -1,8 +1,15 @@
 @import '../../styles/default';
 @import '../../styles/variables';
 
+$homeCarouselHeight: 400px; 
+
 .home {
     @extend .container-fluid;
     width: $breakpoint;
 }
 
+.homeCarousel {
+    @extend .flex-column-center;
+
+    height: $homeCarouselHeight;
+}
