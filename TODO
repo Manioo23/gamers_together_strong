@@ -15,11 +15,11 @@ Tasks:
             ☐ Usuwanie przestarzałych Toastów w Toasterze
             ☐ Ustawianie typów Toastów // np. Error, Message, Warning
     Miscellaneous:
-        ☐ GameScreen powinien posiadać przycisk powrotu do strony głównej, to samo powinien mieć UserScreen
-        ☐ Wszystkie pliki stylów powinny być w rozszerzeniu .scss
-        ☐ Pliki stylów powinny mieć jedno źródło kolorów, zmiennych i podstawowych class [ np. color-primary: #fff, font-size-big: 15px, .justified-center ]
-        ☐ Wszystkie klasy w modułach scss powiny używać camelcasa [ umożliwia to korzystanie z notacji style.className zamiast style['class-name'] ]
-        ☐ Każda gra powinna posiadać w bazie danych url do zdjęcia
+        ✔ GameScreen powinien posiadać przycisk powrotu do strony głównej, to samo powinien mieć UserScreen @done(20-10-04 14:43)
+        ✔ Wszystkie pliki stylów powinny być w rozszerzeniu .scss @done(20-10-04 14:46)
+        ✔ Pliki stylów powinny mieć jedno źródło kolorów, zmiennych i podstawowych class [ np. color-primary: #fff, font-size-big: 15px, .justified-center ] @done(20-10-04 14:47)
+        ✔ Wszystkie klasy w modułach scss powiny używać camelcasa [ umożliwia to korzystanie z notacji style.className zamiast style['class-name'] ] @done(20-10-04 14:47)
+        ✔ Każda gra powinna posiadać w bazie danych url do zdjęcia @done(20-10-04 14:47)
     To be specified:
         // Te taski nie są jeszcze sprecyzowane, przed wykonaniem należy je rozpisać i wyprecyzować ich zadanie
         ☐ Migracja z bazy danych w JSON na MongoDB

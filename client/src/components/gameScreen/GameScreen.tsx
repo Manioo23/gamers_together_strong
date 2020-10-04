@@ -37,6 +37,7 @@ const GameScreen = (props: any) => {
                     <div className={style.middleDivider}/>
                 </div>
                 <div className={style.right}>
+                    {/**TODO: Dodadać ikony innych gier */}
                     Nothing for now
                 </div>
             </div>

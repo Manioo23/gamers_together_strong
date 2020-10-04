@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { Link} from 'react-router-dom';
+
 import * as style from './Navbar.scss';
 
 type NavbarProps = {
@@ -9,21 +11,21 @@ const Navbar: React.FC<NavbarProps> = () => {
 	return (
 		<div className={style.navbarWrapper}>
 			<div className={style.navbar}>
-				<div className={style.navbarElement}>
+				<Link to={'/home'} className={style.navbarElement}>
 					Home
-				</div>
-				<div className={style.navbarElement}>
+				</Link>
+				<Link to={'/games'} className={style.navbarElement}>
 					Games
-				</div>
-				<div className={style.navbarElement}>
+				</Link>
+				<Link to={'/friends'} className={style.navbarElement}>
 					Friends
-				</div>
-				<div className={style.navbarElement}>
+				</Link>
+				<Link to={'/profile'} className={style.navbarElement}>
 					Profile
-				</div>
-				<div className={style.navbarElement}>
+				</Link>
+				<Link to={'/about'} className={style.navbarElement}>
 					About
-				</div>
+				</Link>
 			</div>
 			<div className={style.navbarUserInfo} >
 				<div className={style.navbarUserInfoElement}>
