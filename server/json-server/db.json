@@ -4,31 +4,36 @@
       "id": "1",
       "username": "jack1",
       "description": "My name is jack. I'm a big fan of all RTS games but I don't mind some FPS sometimes",
-      "discordName": "Jack1#3321"
+      "discordName": "Jack1#3321",
+      "imgUrl": "https://64.media.tumblr.com/24be07dd685c85a2a276c6aefa3be4c7/f49411532aabb1b5-a1/s250x400/fd776438744e7f14d49ddebb316af6ed618ec7a0.png"
     },
     {
       "id": "2",
       "username": "rosaline321",
       "description": "My name is Anna. I stand the point that gamer-girls can play and they're good at it",
-      "discordName": "roseXrose#4421"
+      "discordName": "roseXrose#4421",
+      "imgUrl": "https://64.media.tumblr.com/7ceb133b9092f9a1b5df2fa1f18586ba/265be101b78dc154-79/s250x400/9bf4843c9f3495f66ec196d56a3443d986525503.png"
     },
     {
       "id": "3",
       "username": "stanxxx",
       "description": "360 noscope! This joke is older then me and I'm not that young",
-      "discordName": "69stan69#1121"
+      "discordName": "69stan69#1121",
+      "imgUrl": "https://64.media.tumblr.com/d2b94c0557e6acf19abe922db11f94b6/fe96b6f53b1355fb-a8/s250x400/086178b89b3aa3356665590db87ca517c0fab816.png"
     },
     {
       "id": "4",
       "username": "blaz6969",
       "description": "Aut caesar aut nihil",
-      "discordName": "blaz.krak#4007"
+      "discordName": "blaz.krak#4007",
+      "imgUrl": "https://64.media.tumblr.com/9d285fc210a459f7838df3b199074d60/54d4f9ca9a6e66a1-2f/s250x400/8be7bfba0462b5e30484013fc99a05d0af3020cf.png"
     },
     {
       "id": "5",
       "username": "ziomal2010",
       "description": "I'm a young humble guy looking for a girlfriend on roblox servers HIT ME UP 1234",
-      "discordName": "itsamemario#5968"
+      "discordName": "itsamemario#5968",
+      "imgUrl": "https://64.media.tumblr.com/8abfce1c993889e5625c765c47d7076d/036cca798f03892a-58/s250x400/09b5c266fcd2e471995d3bd9e00072f72bfa8111.png"
     }
   ],
   "games": [
@@ -36,79 +41,85 @@
       "id": "1",
       "name": "Minecraft: Dungeons",
       "description": "Brave the dungeons alone, or team up with friends! Up to four players can battle together through action-packed, treasure-stuffed, wildly varied levels, all in an epic quest to save the villagers and take down the evil Arch-Illager!",
-      "genreId": "3"
+      "genreId": "3",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co233r.jpg"
     },
     {
       "id": "2",
       "name": "The last of us: Part II",
       "description": "Set 5 years after the events of The Last of Us, we see the return of Joel and Ellie. Driven by hatred, Ellie sets out for Seattle to serve justice. However, she begins to wonder what justice really means.",
-      "genreId": "4"
+      "genreId": "4",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1r0o.jpg"
     },
     {
       "id": "3",
       "name": "Valorant",
       "description": "Imagine this: tactical shooter meets hypernatural powers. Everyone’s got guns and a unique set of abilities, so how do you beat someone with the speed of wind? Use your own moves to outplay them and beat them to the shot. VALORANT is a game for bold strategists who dare to make the unexpected play, because if it wins, it works.",
-      "genreId": "5"
+      "genreId": "5",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2gpr.jpg"
     },
     {
       "id": "4",
       "name": "Cyberpunk 2077",
       "description": "Adapted from the Cyberpunk franchise, the game is an open world, non-linear RPG with an FPS style in which players are able to heavily customize their character to suit their play style. Gun play, exploration, player choice and activities such as hacking are to feature heavily throughout the game with missions, quests and objectives being completed in a variety of different ways. The world will have dynamic weather and a day/night cycle to make it truly immersive.",
-      "genreId": "6"
+      "genreId": "6",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rft.jpg"
     },
     {
       "id": "5",
       "name": "Half-Life 2",
       "description": "By taking the suspense, challenge and visceral charge of the original, and adding startling new realism and responsiveness, Half-Life 2 opens the door to a world where the player's presence affects everything around him, from the physical environment to the behaviors even the emotions of both friends and enemies.",
-      "genreId": "5"
+      "genreId": "5",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1nmw.jpg"
     },
     {
       "id": "6",
       "name": "Bloodborne",
       "description": "With new story details, learn the tale of hunters who once made Yharnam their hunting grounds, meet new NPCs, and discover another side of the history and world of Bloodborne",
-      "genreId": "6"
+      "genreId": "6",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1rba.jpg"
     },
     {
       "id": "7",
       "name": "The Witcher 3",
       "description": "A story-driven, next-generation open world role-playing game set in a visually stunning fantasy universe full of meaningful choices and impactful consequences. In The Witcher you play as the professional monster hunter, Geralt of Rivia, tasked with finding a child of prophecy in a vast open world rich with merchant cities, viking pirate islands, dangerous mountain passes, and forgotten caverns to explore.",
-      "genreId": "6"
+      "genreId": "6",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1wyy.jpg"
     },
     {
       "id": "8",
       "name": "Club Penguin",
       "description": "Club Penguin was a massively multiplayer online game, involving a virtual world that contained a range of online games and activities. It was created by New Horizon Interactive. Players used cartoon penguin-avatars and played in a winter-set virtual world.",
-      "genreId": "4"
+      "genreId": "4",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2594.jpg"
     },
     {
       "id": "9",
       "name": "ITTA",
       "description": "A girl, her cat, her gun, and a search for answers. Featuring challenging bullet-hell style gameplay and a thoughtful narrative steeped in otherworldly mythology, ITTA will test your skills and your resolve. At the end of the world, who else can you rely on but yourself?",
-      "genreId": "4"
+      "genreId": "4",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co1xlw.jpg"
     },
     {
       "id": "12",
       "name": "Green Hell",
       "description": "Green Hell is a sweltering struggle for survival in the Amazonian rainforest. Clinging to life, the player is set on a journey of durability as the effects of solitude wear heavy not only on the body but also the mind. How long can you survive against the dangers of the unknown?",
-      "genreId": "2"
+      "genreId": "2",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co255i.jpg"
     },
     {
       "id": "13",
       "name": "Minecraft: Bedwars",
       "description": "Minigame on minecraft servers. The main point is to be the last who survives. Anyone can respawn as long as they have a bed in their base.",
-      "genreId": "1"
+      "genreId": "1",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co2dx9.jpg"
     },
     {
       "id": "14",
       "name": "Call of Duty: Warzone",
       "description": "This is a multiplayer mode for the new COD: Modern Warfare. The main goal is to stay alive the longest.",
-      "genreId": "1"
-    },
-    {
-      "name": "Nazwa ",
-      "description": "Opis jakikolwiek chj",
-      "genreId": "2",
-      "id": "RQzW3p8"
+      "genreId": "1",
+      "imgUrl": "https://images.igdb.com/igdb/image/upload/t_cover_big/co20o8.jpg"
     }
   ],
   "genres": [

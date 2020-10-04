@@ -4,7 +4,8 @@ export default gql`
 {
     games(first: 5){
         id
-        name    
+        name
+        imgUrl    
     }
 }
 `;

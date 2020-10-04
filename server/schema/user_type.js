@@ -13,6 +13,7 @@ const UserType = new GraphQLObjectType({
         username: { type: GraphQLString },
         description: { type: GraphQLString },
         discordName: { type: GraphQLString },
+        imgUrl: {type: GraphQLString },
         games: {
             type: new GraphQLList(GameType),
             resolve(parentValue, args) {

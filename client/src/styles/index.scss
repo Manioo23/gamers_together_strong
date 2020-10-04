@@ -4,6 +4,9 @@
 @import "./default";
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+html {
+	overflow-y: scroll;
+}
 
 body {
 	margin: 0px;
@@ -23,4 +26,8 @@ body {
 		text-decoration: none;
 		color: inherit;
 	}
+}
+
+.containerInner {
+	@extend .container-inner;
 }

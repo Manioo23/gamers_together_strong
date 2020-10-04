@@ -5,7 +5,6 @@ $homeCarouselHeight: 400px;
 
 .home {
     @extend .container-fluid;
-    width: $breakpoint;
 }
 
 .homeCarousel {

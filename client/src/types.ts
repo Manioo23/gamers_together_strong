@@ -2,6 +2,7 @@ export type GameType = {
     id: string,
     name: string,
     description: string,
+    imgUrl: string,
     genre: GenreType,
     users: Array<UserType>,
 }
@@ -17,5 +18,6 @@ export type UserType = {
     username: string,
     description: string,
     discordName: string,
+    imgUrl: string,
     games: Array<GameType>,
 }

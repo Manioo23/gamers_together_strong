@@ -1,48 +1,47 @@
 import React from 'react';
 import { useQuery } from 'react-apollo';
+import FadeLoader from 'react-spinners/FadeLoader';
+
+import * as style from './GameScreen.scss';
 import fetchGame from '../../queries/fetchGame';
-import FadeLoader from 'react-spinners/FadeLoader'
-import { GameType } from '../../types';
-
-// Podstrona dla pojedynczej gry
-
-const prepareGameInfo = ({ game }: {game: GameType}) => {
-    return (
-        <div>
-            <p>Name: {game.name}</p>
-            <p>Description: {game.description}</p>
-            <p>Genre: {game.genre.name}</p>
-            <br/>
-            <p>Users:</p>
-            {
-                game.users.length ?
-                <div>
-                    { game.users.map( (v, i) => <p key={i}>{v.username}</p>)}
-                </div> :
-                <p>No users play this game</p>
-            }
-        </div>
-    )
-}
+import { Redirect } from 'react-router-dom';
 
 //FIXME: This props should defeniately not be of type any
 const GameScreen = (props: any) => {
-    // GameId przychodzi jako argument w url'u
     const GameId = props.match.params.id;
-    // Zapytanie do GraphQL o dane dotyczące gry o ID = GameId
     const {loading, error, data} = useQuery(fetchGame, { variables: { id: GameId }});
-    return (
-        <div>
-            <p>Game Info</p>
-            { 
-                loading ?
-                <FadeLoader css={'margin: 0px auto'} color={"#fff"}/> :
-                error ? 
-                <p>Error: {error}</p> :
-                prepareGameInfo(data)
-            }
-        </div>
-    )
+    if(loading) {
+        return <FadeLoader css={'margin: 0px auto'} color={"#fff"}/>;
+    } else if(error) {
+        return <Redirect to='/home'/>;
+    } else {
+        const { name, description, imgUrl, genre} = data.game;
+        return (
+            <div className={style.gameScreen}>
+                <div className={style.left}>
+                    <div className={style.gameCoverImg} style={{backgroundImage: `url(${imgUrl})`}}/>
+                </div>
+                <div className={style.middle}>
+                    <div className={style.name}>
+                        <div className={style.key}>Name:</div>
+                        <div className={style.value}>{name}</div>
+                    </div>
+                    <div className={style.genre}>
+                        <div className={style.key}>Genre:</div>
+                        <div className={style.value}>{genre.name}</div>
+                    </div>
+                    <div className={style.description}>
+                        <div className={style.key}>Description:</div>
+                        <div className={style.value}>{description}</div>
+                    </div>
+                    <div className={style.middleDivider}/>
+                </div>
+                <div className={style.right}>
+                    Nothing for now
+                </div>
+            </div>
+        )
+    }
 }
 
 export default GameScreen;

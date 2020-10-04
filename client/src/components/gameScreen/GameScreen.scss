@@ -1,0 +1,65 @@
+@import '../../styles/default';
+
+.gameScreen {
+    @extend .container-fluid;
+    @extend .flex-row-center;
+
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.left {
+    width: 400px;
+    height: 600px;
+
+    .gameCoverImg {
+        @extend .container-fluid;
+        @extend .background-image-cover;
+    }
+}
+
+.middle {
+    width: 600px;
+    height: 300px;
+    border-bottom: $color-light 2px solid;
+    font-size: $font-size-large;
+    color: $color-light
+}
+
+.right {
+    width: 200px;
+    height: 600px;
+
+    background-color: $color-light;
+    
+    //DEBUG: Do czasu stworzenia thumbnaili gier
+    color: $color-dark;
+    @extend .flex-column-center;
+}
+
+.key {
+    @extend .text-align-center;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.value {
+    width: 400px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.name, .genre {
+    @extend .flex-row-center;
+}
+.description {
+    @extend .flex-row-center;
+    align-items: flex-start;
+    .value {
+        height: 230px;
+        margin-bottom: 0px;
+        text-align: justify;
+        padding: 0px 10px 0px 5px;
+    }
+}

@@ -12,12 +12,13 @@ type CarouselProps = {
 
 type CarouselData = {
 	value: string,
+	imgUrl: string,
 	id: string,
 }
 
 const generateTiles = (values: Array<CarouselData>, urlBase: string, error?: ApolloError) => {
 	return 	values.length ?
-			values.map((v: {value: string, id: string}, i: number) => <CarouselTile linkTo={`${urlBase}/${v.id}`} key={v.id} value={v.value}/> ) :
+			values.map((v: CarouselData, i: number) => <CarouselTile linkTo={`${urlBase}/${v.id}`} key={v.id} value={v.value} imgUrl={v.imgUrl}/> ) :
 			<p>oopsie</p>;
 };
 

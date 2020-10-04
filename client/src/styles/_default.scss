@@ -1,4 +1,5 @@
 @import './variables';
+@import './colors';
 
 .margin-horizontal-auto {
     margin-left: auto;
@@ -56,6 +57,10 @@
 
     height: 100%;
     width: 100%;
+}
+
+.container-inner {
+    width: $breakpoint;
 }
 
 //DISPLAY

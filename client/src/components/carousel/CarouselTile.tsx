@@ -5,12 +5,13 @@ import * as style from './Carousel.scss';
 
 type CarouselTileProps = {
     value: string,
+    imgUrl: string,
     key?: string,
     linkTo?: string,
     className?: string
 }
 
-const CarouselTile: React.FC<CarouselTileProps> = ({value, linkTo, className}) => {
+const CarouselTile: React.FC<CarouselTileProps> = ({value, imgUrl, linkTo, className}) => {
     if( linkTo ) {
         return (
             <Link to={linkTo} className={style.carouselTile}>
@@ -18,7 +19,7 @@ const CarouselTile: React.FC<CarouselTileProps> = ({value, linkTo, className}) =
                     {value}
                 </div>
                 <div className={style.bottom}>
-                    <div className={style.bottomImg} style={{backgroundImage: "url('https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg')"}}/>
+                    <div className={style.bottomImg} style={{backgroundImage: `url(${imgUrl})`}}/>
                 </div>
             </Link>
         );
@@ -29,7 +30,7 @@ const CarouselTile: React.FC<CarouselTileProps> = ({value, linkTo, className}) =
                     {value}
                 </div>
                 <div className={style.bottom}>
-                    <div className={style.bottomImg} style={{backgroundImage: "url('https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg')"}}/>
+                    <div className={style.bottomImg} style={{backgroundImage: `url(${imgUrl})`}}/>
                 </div>
             </div>
         )

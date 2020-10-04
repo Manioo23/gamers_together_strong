@@ -12,6 +12,7 @@ const GameType = new GraphQLObjectType({
         id: { type: GraphQLString },
         name: { type: GraphQLString },
         description: { type: GraphQLString },
+        imgUrl: { type: GraphQLString },
         genre: {
             type: GenreType,
             resolve(parentValue, args) {
